@@ -1,0 +1,38 @@
+package aula07.model;
+
+import aula07.enums.MarcaTV;
+
+public class TV {
+    private String modelo;
+    private Double tamanho;
+    private MarcaTV marca;
+
+    public TV(String modelo, Double tamanho, MarcaTV marca) {
+        this.modelo = modelo;
+        this.tamanho = tamanho;
+        this.marca = marca;
+    }
+    
+    @Override
+    public String toString() {
+        return "TV [marca=" + marca + ", modelo=" + modelo + ", tamanho=" + tamanho + "]";
+    }
+    
+    public String getModelo() {
+        return modelo;
+    }
+
+    public Double getTamanho() {
+        return tamanho;
+    }
+
+    public MarcaTV getMarca() {
+        return marca;
+    }
+
+    
+
+    
+
+
+}
